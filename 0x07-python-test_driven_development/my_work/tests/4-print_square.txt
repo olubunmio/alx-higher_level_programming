@@ -1,0 +1,78 @@
+Task 3 (Print Square) - 4-print_square.txt
+===========================================
+Using print_square() function
+===========================================
+
+
+Example:
+    >>> print_square = __import__('4-print_square').print_square
+    >>> print_square(4)
+    ####
+    ####
+    ####
+    ####
+    >>> print_square(10)
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    >>> print_square(0)
+    >>> print_square(1)
+    #
+    >>> try:
+    ...    print_square(-1)
+    ... except Exception as e1:
+    ...    print(e1)
+    size must be >= 0
+
+1-> Testing for negative floats
+    Example:
+    =======
+    >>> print_square(-1.4)
+    Traceback (most recent call last):
+        ...
+    TypeError: size must be an integer
+
+2-> Testing for type errors
+    Example:
+    =======
+    >>> try:
+    ...    print_square("Hi")
+    ... except Exception as e2:
+    ...    print(e2)
+    size must be an integer
+
+    >>> try:
+    ...    print_square([1, 2, 3, 4])
+    ... except Exception as e3:
+    ...    print(e3)
+    size must be an integer
+
+    >>> try:
+    ...    print_square({1:2, 2:3, 3:4})
+    ... except Exception as e4:
+    ...    print(e4)
+    size must be an integer
+    >>> try:
+    ...    print_square(None)
+    ... except Exception as e5:
+    ...    print(e5)
+    size must be an integer
+
+    >>> try:
+    ...    print_square(True)
+    ... except Exception as e6:
+    ...    print(e6)
+    size must be an integer
+
+    >>> try:
+    ...    print_square(False)
+    ... except Exception as e7:
+    ...    print(e7)
+    size must be an integer
