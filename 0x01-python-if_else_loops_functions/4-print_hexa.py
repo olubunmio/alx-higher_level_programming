@@ -1,3 +1,4 @@
 #!/usr/bin/python3
-for c in range(0, 99):
-    print("{0} = {1}".format(c, hex(c)))
+
+for i in range(99):
+    print("{:d} = 0x{:x}".format(i, i))
